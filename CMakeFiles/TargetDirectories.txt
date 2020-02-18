@@ -1,0 +1,1 @@
+/home/pi/DPKS/LAB2/CMakeFiles/LAB2_DPKS.dir
