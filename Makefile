@@ -123,6 +123,33 @@ LAB2_DPKS/fast:
 	$(MAKE) -f CMakeFiles/LAB2_DPKS.dir/build.make CMakeFiles/LAB2_DPKS.dir/build
 .PHONY : LAB2_DPKS/fast
 
+lab2.o: lab2.cpp.o
+
+.PHONY : lab2.o
+
+# target to build an object file
+lab2.cpp.o:
+	$(MAKE) -f CMakeFiles/LAB2_DPKS.dir/build.make CMakeFiles/LAB2_DPKS.dir/lab2.cpp.o
+.PHONY : lab2.cpp.o
+
+lab2.i: lab2.cpp.i
+
+.PHONY : lab2.i
+
+# target to preprocess a source file
+lab2.cpp.i:
+	$(MAKE) -f CMakeFiles/LAB2_DPKS.dir/build.make CMakeFiles/LAB2_DPKS.dir/lab2.cpp.i
+.PHONY : lab2.cpp.i
+
+lab2.s: lab2.cpp.s
+
+.PHONY : lab2.s
+
+# target to generate assembly for a file
+lab2.cpp.s:
+	$(MAKE) -f CMakeFiles/LAB2_DPKS.dir/build.make CMakeFiles/LAB2_DPKS.dir/lab2.cpp.s
+.PHONY : lab2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LAB2_DPKS"
+	@echo "... lab2.o"
+	@echo "... lab2.i"
+	@echo "... lab2.s"
 .PHONY : help
 
 
