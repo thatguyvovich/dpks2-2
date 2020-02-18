@@ -7,5 +7,5 @@ Implemented parameters:
 -v --version
 -h --help
 -l --list
--v --value
+-V --value
 ```
