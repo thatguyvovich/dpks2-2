@@ -22,17 +22,17 @@ static struct option ops[] = {
 
 int main(int argc, char* argv[]){
 	int param, param_index;
-	bool list = false;
-	bool value = false;
-	bool version = false;
-	bool help = false;
+	bool blist = false;
+	bool bvalue = false;
+	bool bversion = false;
+	bool bhelp = false;
 
 	while((param = getopt_long(argc, argv, "hvl::V:", ops, &param_index)) != 1){
 		switch(param){
-			case 'h' : if(!help)   {help(); help = true;         } break;
-			case 'v' : if(!version){version(); version = true;   } break;
-			case 'l' : if(!list)   {list(optarg); list = true;   } break;
-			case 'V' : if(!value)  {value(optarg); value = true; } break;
+			case 'h' : if(!bhelp)   {help();        bhelp = true;    } break;
+			case 'v' : if(!bversion){version();     bversion = true; } break;
+			case 'l' : if(!blist)   {list(optarg);  blist = true;    } break;
+			case 'V' : if(!bvalue)  {value(optarg); bvalue = true;   } break;
 
 		}
 	}
